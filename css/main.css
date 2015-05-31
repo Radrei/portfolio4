@@ -1,0 +1,177 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: #f0f0f0 url(../img/wavegrid.png) repeat;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-size: 1em;
+}
+
+#logo{
+	margin-left: 2em;
+}
+
+#navbar{
+	height: 8em;
+	margin-bottom: 5em;
+}
+
+nav{
+	background: #000;
+	height: 100%;	
+	
+}
+
+nav ul li{
+	display: inline;
+}
+
+nav ul li a{
+	font-weight: bold;
+	color: #fff;
+	padding: 0.5em;
+}
+
+.nav-links{
+	font-size: 1.5em;
+	float: right;
+	margin-top: 1.5em;
+	margin-right: 2em;
+}
+
+.nav-links li{
+	list-style-type: none;
+	display: inline;
+}
+
+.page-header{
+	margin-bottom: 0.25em;
+	margin-top: 0;
+}
+
+.portfolio-item{
+	margin-bottom: 1em;
+}
+
+.portfolio-item h3 a, .portfolio-item h3{
+	color: #49c1f6;
+	margin: 0px;
+	font-size: 1.3em;
+}
+
+.graphics{
+	margin: 0 auto;
+	height: 9.5em;
+}
+small{
+	color:grey;
+}
+
+footer .nav-links li{
+	margin-right: 1em;
+}
+
+footer p{
+	padding: 1.6em;
+}
+
+.social{
+	display: inline;
+	padding: 1em;
+}
+
+.mobile{
+	display: none;
+}
+
+.mobile-logo{
+	display: none;
+}
+
+@media (max-width: 1180px) {
+	.nav-links{
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 950px) {
+	#logo{
+		width: 200px;
+	}
+	#navbar{
+		height: 4.5em;
+	}
+	ul li a img{
+		width: 25px;
+	}
+}
+
+@media (max-width: 815px) {
+	.mobile-logo{
+		display: block;
+		margin: 0 auto;
+	}
+	#logo{
+		display: none;
+	}
+	.nav-links{
+		font-size: 1.3em;
+		float: none;
+		text-align: center;
+	}
+	ul li a img{
+		width: 35px;
+	}
+	.portfolio-item { 
+		width: 100% !important; 
+	}
+	.portfolio-item.column{
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 750px) {
+	#navbar{
+		display: none;
+	}
+	.mobile{
+		display: block;
+		margin-left: -2.5em;
+		margin-right: 2em;
+	}
+	nav{
+		background: transparent;
+	}
+	.mobile-links a{
+		font-size: 2em;
+		background: #000;
+		display: inline-block;
+		width: 6em;
+		margin: 10px;
+		text-align: center;
+	}
+	
+	.mobile-links a:hover{
+		background: #808080;
+	}
+
+	.mobile-links .one-half.column li a{
+		width: 9.7em;
+		text-align: center;
+	}
+}
+
+@media (max-width: 550px) {
+	.mobile-links .column a, .mobile-links .one-half.column li a{
+		width: 95%;
+	}
+}
